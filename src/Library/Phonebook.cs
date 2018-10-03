@@ -24,14 +24,16 @@ namespace Library {
             this.persons.Remove (contacto);
         }
 
-        public void SendMessage (String[] contactsList, Mail channel, string message) {
+        // Método para enviar correo
+        public void SendMessage (String[] contactsList, Mail channelM, string message) {
             List<Contact> contacts = this.Search (contactsList);
             foreach (Contact contact in contacts) {
                 MessageMail messageM = new MessageMail (this.Owner.Email, contact.Email, message);
-                channel.Send (messageM);
+                channelM.Send (messageM);
             }
         }
 
+        // Método para enviar WhatsApp
         public void SendWhatsApp (string[] contactsList, WhatsApp channelW, string messageW) 
         {
             List<Contact> contactsW = this.Search (contactsList);
