@@ -13,7 +13,7 @@ namespace WhatsAppApiUCU {
             this.authToken = authToken;
         }
 
-        public string SendWhatsApp (string to, string text) {
+        public string Send (string to, string text) {
             if (!to.StartsWith ("+598")) {
                 return "El número al que mandás el mensaje debe comenzar con +598";
             }

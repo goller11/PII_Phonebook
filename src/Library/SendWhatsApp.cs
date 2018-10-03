@@ -8,7 +8,7 @@ namespace Library {
         WhatsAppApi whatsApp = new WhatsAppApi (accountSid, authToken);
         public void Send (Message messageW) 
         {
-            whatsApp.SendWhatsApp (messageW.To, messageW.Text);
+            whatsApp.Send (messageW.To, messageW.Text);
         }
 
     }
