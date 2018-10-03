@@ -18,15 +18,16 @@ namespace Program {
 
             // Agregar contactos a la lista
 
-            List<Contact> listContacts = new List<Contact> ();
-            listContacts.Add (firstContact);
-            listContacts.Add (secondContact);
+            ownerPB.AddContact(firstContact);
+            ownerPB.AddContact(secondContact);
 
             // Enviar un correo a algunos contactos
 
-            ownerPB.SendMessage (new String[] { "firstContact" }, new Mail(), "Probando");
+            ownerPB.SendMessage (new String[] { "Contact 1", "Contact 2" }, new Mail(), "Probando");
 
             // Enviar un WhatsApp a algunos contactos
+
+            ownerPB.SendWhatsApp (new String[] { "Contact 1" }, new Mail(), "Probando el WPP");
 
             // Enviar un SMS a algunos contactos
 
