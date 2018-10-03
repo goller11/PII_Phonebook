@@ -13,7 +13,7 @@ namespace Library {
 
         public Message createMessage(Contact fromW, Contact toW)
         {
-            return new MessageWhatsApp(WhatsAppChannel.accountSid, toW.Phone);
+            return new MessageWhatsApp(WhatsAppChannel.accountSid, toW.Phone, messageW.Text);
         }
 
     }
