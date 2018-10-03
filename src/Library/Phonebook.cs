@@ -28,7 +28,7 @@ namespace Library {
             this.persons.Remove (contacto);
         }
 
-        // Método para enviar correo
+        // Método para enviar mediante un canal, especificado por el usuario
         public void Send (String[] contactsList, IMessageChannel channelM, string textC) {
             
             Message messageC;
