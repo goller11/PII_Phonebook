@@ -8,18 +8,15 @@ namespace Program {
 
             // Crear el contacto dueño
 
-            Contact ownerContact = new Contact ("Guillermo", "+14155238886", "tomasorindelafuente11@gmail.com");
+            Contact ownerContact = new Contact ("Guillermo");//, "+14155238886", "tomasorindelafuente11@gmail.com");
             Phonebook ownerBook = new Phonebook (ownerContact);
 
             // Crear la lista de contactos
 
-            Contact firstContact = new Contact ("Contact 1", "+59898242410", "guillevogel11@gmail.com");
-            Contact secondContact = new Contact ("Contact 2", "+59894585797", "guillermo.vogel@correo.ucu.edu.uy");
-            Contact thirdContact = new Contact ("Contact 3", "+59899999999", "tomasorindelafuente11@gmail.com");
+            Contact firstContact = new Contact ("Contact 1");//, "+59898242410", "guillevogel11@gmail.com");
+            Contact secondContact = new Contact ("Contact 2");//, "+59894585797", "guillermo.vogel@correo.ucu.edu.uy");
+            Contact thirdContact = new Contact ("Contact 3");//, "+59899999999", "tomasorindelafuente11@gmail.com");
             // Agregar contactos a la lista
-
-            ownerBook.AddContact (firstContact);
-            ownerBook.AddContact (secondContact);
 
             // Enviar un correo a algunos contactos
 

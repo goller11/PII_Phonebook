@@ -15,8 +15,11 @@ namespace Library {
 
         // Método para agregar contactos
 
-        public void AddContact (Contact contacto) {
-            this.persons.Add (contacto);
+        public Contact AddContact (string contacto) 
+        {
+            Contact personC = new Contact(contacto);
+            this.persons.Add(personC);
+            return personC;
         }
 
         // Método para remover contactos
@@ -26,20 +29,14 @@ namespace Library {
         }
 
         // Método para enviar correo
-        public void Send (String[] contactsList, MailChannel channelM, string message) {
+        public void Send (String[] contactsList, IMessageChannel channelM, string textC) {
+            
+            Message messageC;
             List<Contact> contactsM = this.Search (contactsList);
             foreach (Contact contactM in contactsM) {
-                MessageMail messageM = new MessageMail (this.Owner.Email, contactM.Email, message);
-                channelM.Send (messageM);
-            }
-        }
-
-        // Método para enviar WhatsApp
-        public void Send (String[] contactsList, WhatsAppChannel channelW, string messageW) {
-            List<Contact> contactsW = this.Search (contactsList);
-            foreach (Contact contactW in contactsW) {
-                MessageWhatsApp messageWhatsApp = new MessageWhatsApp (Owner.Phone, contactW.Phone, messageW);
-                channelW.Send (messageWhatsApp);
+                messageC = channelM.createMessage(this.Owner, contactM);
+                messageC.Text = textC;
+                channelM.Send(messageC);
             }
         }
 

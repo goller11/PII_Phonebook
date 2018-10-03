@@ -11,6 +11,11 @@ namespace Library {
             whatsApp.Send (messageW.To, messageW.Text);
         }
 
+        public Message createMessage(Contact fromW, Contact toW)
+        {
+            return new MessageWhatsApp(WhatsAppChannel.accountSid, toW.Phone);
+        }
+
     }
 
 }
