@@ -9,7 +9,7 @@ namespace Program {
 
             // Crear el contacto dueño
 
-            Contact owner = new Contact ("Guillermo", "+14155238886", "basket.lagomar@gmail.com");
+            Contact owner = new Contact ("Guillermo", "+59898242410", "basket.lagomar@gmail.com");
             Phonebook ownerPB = new Phonebook (owner);
 
             // Crear la lista de contactos
