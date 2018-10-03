@@ -24,7 +24,8 @@ namespace Program {
 
             // Enviar un correo a algunos contactos
 
-            ownerPB.SendMessage (new String[] { "Contact 1" }, new Mail (), "Probando el mail");
+            // ownerPB.SendMessage (new String[] { "Contact 1" }, new Mail (), "Probando el mail");
+            // Hay que agregar correo y contraseña en SendMail.cs para que funcione correctamente.
 
             // Enviar un WhatsApp a algunos contactos
 
