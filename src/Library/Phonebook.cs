@@ -7,20 +7,23 @@ namespace Library {
         private List<Contact> persons;
         public Contact Owner { get; }
 
-        public Phonebook (Contact owner) {
+        public Phonebook (Contact owner) 
+        {
             this.Owner = owner;
             this.persons = new List<Contact> ();
         }
 
         // Método para agregar contactos
 
-        public void AddContact (Contact contacto) {
+        public void AddContact (Contact contacto) 
+        {
             this.persons.Add (contacto);
         }
 
         // Método para remover contactos
 
-        public void RemoveContact (Contact contacto) {
+        public void RemoveContact (Contact contacto) 
+        {
             this.persons.Remove (contacto);
         }
 
@@ -46,12 +49,16 @@ namespace Library {
             }
         }
 
-        public List<Contact> Search (string[] namesList) {
+        public List<Contact> Search (string[] namesList) 
+        {
             List<Contact> result = new List<Contact> ();
 
-            foreach (Contact person in this.persons) {
-                foreach (string name in namesList) {
-                    if (person.Name.Equals (name)) {
+            foreach (Contact person in this.persons) 
+            {
+                foreach (string name in namesList) 
+                {
+                    if (person.Name.Equals (name)) 
+                    {
                         result.Add (person);
                     }
                 }
