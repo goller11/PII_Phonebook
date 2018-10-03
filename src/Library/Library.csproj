@@ -6,5 +6,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\MailSender\MailSenderApiUCU.csproj" />
+    <ProjectReference Include="..\..\WhatsAppApi\WhatsAppApiUCU.csproj" />
   </ItemGroup>
 </Project>

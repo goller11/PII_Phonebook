@@ -1,12 +1,15 @@
 using System;
-using MailSenderApiUCU;
+using WhatsAppApiUCU;
 
 namespace Library {
     public class WhatsApp : IMessageChannel {
-        MailSender whatsAppSender = new MailSender ("basket.lagomar@gmail.com", "monodada14");
-        public void Send (Message message) {
-            whatsAppSender.EnviarMail (message.From, "Mensaje de difusión", message.To, "Texto alternativo", message.Text);
+        const string accountSid = "ACfbd57f50e199a28eac49de4cc4acfb8a";
+        const string authToken = "81795970808380267013bf04070a5936";
+        WhatsAppApi whatsApp = new WhatsAppApi (accountSid, authToken);
+        public void Send (Message messageW) {
+            whatsApp.SendWhatsApp (messageW.To, messageW.Text);
         }
 
     }
+
 }
