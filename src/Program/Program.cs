@@ -28,7 +28,7 @@ namespace Program {
 
             // Enviar un WhatsApp a algunos contactos
 
-            ownerPB.SendWhatsApp (new String[] { "Contact 1" }, new WhatsApp (), "Probando el WhatsApp");
+            ownerPB.SendWhatsAPP (new String[] { "Contact 1" }, new WhatsApp (), "Probando el WhatsApp");
 
             // Enviar un SMS a algunos contactos
         }

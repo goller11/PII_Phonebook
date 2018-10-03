@@ -39,7 +39,7 @@ namespace Library {
         }
 
         // Método para enviar WhatsApp
-        public void SendWhatsApp (string[] contactsList, WhatsApp channelW, string messageW) 
+        public void SendWhatsAPP (string[] contactsList, WhatsApp channelW, string messageW) 
         {
             List<Contact> contactsW = this.Search (contactsList);
             foreach (Contact contactW in contactsW) 
