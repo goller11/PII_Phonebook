@@ -35,7 +35,7 @@ namespace Library {
         }
 
         // Método para enviar WhatsApp
-        public void SendWhatsAPP (string[] contactsList, WhatsApp channelW, string messageW) {
+        public void SendWhatsAPP (String[] contactsList, WhatsApp channelW, string messageW) {
             List<Contact> contactsW = this.Search (contactsList);
             foreach (Contact contactW in contactsW) {
                 MessageWhatsApp messageWhatsApp = new MessageWhatsApp (Owner.Phone, contactW.Phone, messageW);
