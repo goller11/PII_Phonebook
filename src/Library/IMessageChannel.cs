@@ -3,7 +3,7 @@ namespace Library
     public interface IMessageChannel
     {
 
-        Message createMessage(Contact from, Contact to);
+        Message createMessage(Contact fromCM, Contact toCM);
          void Send(Message message);
     }
 }
