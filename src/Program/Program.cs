@@ -9,8 +9,8 @@ namespace Program {
 
             // Crear el contacto dueño
 
-            Contact owner = new Contact ("Guillermo", "+59898242410", "basket.lagomar@gmail.com");
-            Phonebook ownerPB = new Phonebook (owner);
+            Contact ownerContact = new Contact ("Guillermo", "+14155238886", "basket.lagomar@gmail.com");
+            Phonebook ownerBook = new Phonebook (ownerContact);
 
             // Crear la lista de contactos
 
@@ -19,17 +19,17 @@ namespace Program {
 
             // Agregar contactos a la lista
 
-            ownerPB.AddContact (firstContact);
-            ownerPB.AddContact (secondContact);
+            ownerBook.AddContact (firstContact);
+            ownerBook.AddContact (secondContact);
 
             // Enviar un correo a algunos contactos
 
-            // ownerPB.SendMessage (new String[] { "Contact 1" }, new Mail (), "Probando el mail");
+            // ownerBook.SendMessage (new String[] { "Contact 1" }, new Mail (), "Probando el mail");
             // Hay que agregar correo y contraseña en SendMail.cs para que funcione correctamente.
 
             // Enviar un WhatsApp a algunos contactos
 
-            ownerPB.SendWhatsAPP (new String[] { "Contact 1" }, new WhatsApp (), "Probando el WhatsApp");
+            ownerBook.SendWhatsAPP (new String[] { "Contact 1" }, new WhatsApp (), "Probando el WhatsApp");
 
             // Enviar un SMS a algunos contactos
         }
