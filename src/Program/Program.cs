@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Library;
-using WhatsAppApiUCU;
 
 namespace Program {
     class Program {
