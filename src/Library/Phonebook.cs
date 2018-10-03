@@ -28,8 +28,8 @@ namespace Library {
         // Método para enviar correo
         public void SendMessage (String[] contactsList, Mail channelM, string message) {
             List<Contact> contactsM = this.Search (contactsList);
-            foreach (Contact contact in contactsM) {
-                MessageMail messageM = new MessageMail (this.Owner.Email, contact.Email, message);
+            foreach (Contact contactM in contactsM) {
+                MessageMail messageM = new MessageMail (this.Owner.Email, contactM.Email, message);
                 channelM.Send (messageM);
             }
         }
