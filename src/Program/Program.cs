@@ -24,7 +24,7 @@ namespace Program {
 
             // Enviar un correo a algunos contactos
 
-            //ownerPB.SendMessage (new String[] { "Contact 1", "Contact 2" }, new Mail (), "Probando el mail");
+            //ownerPB.SendMessage (new String[] { "Contact 1" }, new Mail (), "Probando el mail");
 
             // Enviar un WhatsApp a algunos contactos
 
