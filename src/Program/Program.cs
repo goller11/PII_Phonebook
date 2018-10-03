@@ -28,7 +28,7 @@ namespace Program {
 
             // Enviar un WhatsApp a algunos contactos
 
-            ownerBook.Send (new String[] { "Contact 1", "Contact 2" }, new WhatsAppChannel (), "Probando el WhatsApp");
+            ownerBook.Send (new String[] { "Contact 1" }, new WhatsAppChannel (), "Probando el WhatsApp");
 
             // Enviar un SMS a algunos contactos --> No hay API
         }
