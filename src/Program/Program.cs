@@ -15,7 +15,7 @@ namespace Program {
             // Crear la lista de contactos
 
             Contact firstContact = new Contact ("Contact 1", "+59898242410", "guillevogel11@gmail.com");
-            Contact secondContact = new Contact ("Contact 2", "56788765", "guillermo.vogel@correo.ucu.edu.uy");
+            Contact secondContact = new Contact ("Contact 2", "+59894585797", "guillermo.vogel@correo.ucu.edu.uy");
 
             // Agregar contactos a la lista
 
@@ -29,9 +29,9 @@ namespace Program {
 
             // Enviar un WhatsApp a algunos contactos
 
-            ownerBook.SendWhatsAPP (new String[] { "Contact 1" }, new WhatsApp (), "Probando el WhatsApp");
+            ownerBook.SendWhatsAPP (new String[] { "Contact 1", "Contact 2" }, new WhatsApp (), "Probando el WhatsApp");
 
-            // Enviar un SMS a algunos contactos
+            // Enviar un SMS a algunos contactos --> No hay API
         }
     }
 }
