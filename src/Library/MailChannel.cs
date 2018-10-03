@@ -9,7 +9,7 @@ namespace Library {
         }
 
         public Message createMessage (Contact contactM, Contact toM) {
-            return new MessageMail ("mail", toW.Email);
+            return new MessageMail (contactM.Email, toM.Email);
         }
 
     }
