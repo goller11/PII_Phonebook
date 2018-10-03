@@ -2,7 +2,7 @@ using System;
 using MailSenderApiUCU;
 
 namespace Library {
-    public class Mail : IMessageChannel {
+    public class MailChannel : IMessageChannel {
         MailSender mailSender = new MailSender ("@.", ""); // Agregar correo y contraseña
         public void Send (Message message) 
         {

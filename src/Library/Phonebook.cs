@@ -26,7 +26,7 @@ namespace Library {
         }
 
         // Método para enviar correo
-        public void SendMessage (String[] contactsList, Mail channelM, string message) {
+        public void Send (String[] contactsList, MailChannel channelM, string message) {
             List<Contact> contactsM = this.Search (contactsList);
             foreach (Contact contactM in contactsM) {
                 MessageMail messageM = new MessageMail (this.Owner.Email, contactM.Email, message);
@@ -35,7 +35,7 @@ namespace Library {
         }
 
         // Método para enviar WhatsApp
-        public void SendWhatsAPP (String[] contactsList, WhatsApp channelW, string messageW) {
+        public void Send (String[] contactsList, WhatsAppChannel channelW, string messageW) {
             List<Contact> contactsW = this.Search (contactsList);
             foreach (Contact contactW in contactsW) {
                 MessageWhatsApp messageWhatsApp = new MessageWhatsApp (Owner.Phone, contactW.Phone, messageW);
