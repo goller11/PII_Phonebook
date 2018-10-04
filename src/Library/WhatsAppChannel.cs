@@ -11,9 +11,9 @@ namespace Library {
             whatsApp.Send (messageW.To, messageW.Text);
         }
 
-        public Message createMessage(Contact fromW, Contact toW)
+        public Message createMessage(Contact fromW, Contact toW, string textW)
         {
-            return new MessageWhatsApp(WhatsAppChannel.accountSid, toW.Phone, messageW.Text);
+            return new MessageWhatsApp(WhatsAppChannel.accountSid, toW.Phone, textW);
         }
 
     }

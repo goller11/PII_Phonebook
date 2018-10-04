@@ -34,7 +34,7 @@ namespace Library {
             Message messageC;
             List<Contact> contactsM = this.Search (contactsList);
             foreach (Contact contactM in contactsM) {
-                messageC = channelM.createMessage(this.Owner, contactM);
+                messageC = channelM.createMessage(this.Owner, contactM, textC);
                 messageC.Text = textC;
                 channelM.Send(messageC);
             }
